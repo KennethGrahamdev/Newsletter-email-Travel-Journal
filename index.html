@@ -39,6 +39,26 @@
             border: 0;
         }
 
+      /* Removes blue and underline defaults in IOS */
+        a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration:none !important;
+        font-size:inherit !important;
+        font-family:inherit !important;
+        font-weight:inherit !important;
+        line-height:inherit !important;
+        }
+
+      /* Removes Samsung blue links */
+        #MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        }
+
         .bg-change-art:hover, .bg-change-travel:hover, .bg-change-CEO:hover, .bg-change-face:hover {
             background: #ffffff!important;
             transition: all 0.6s ease!important;
@@ -55,15 +75,7 @@
             transition: all 0.6s ease!important;
         }
 
-    /* Removes Samsung blue links */
-   #MessageViewBody a {
-   color: inherit;
-   text-decoration: none;
-   font-size: inherit;
-   font-family: inherit;
-   font-weight: inherit;
-   line-height: inherit;
-    }
+
 
     @media only screen and (max-width:599.98px) {
       .mobile-travel {
@@ -74,7 +86,7 @@
         height: auto!important;
       }
       .mobile-text {
-        padding: 20px 20px 40px 20px!important;
+        padding: 20px 35px 40px 35px!important;
       }
 
       .h-text {
@@ -89,11 +101,12 @@
         font-size: 20px!important;
       }
 
-      .bg-change-art, .bg-change-CEO, .bg-change-travel, .bg-change-face {
+
+      .bg-change-art, .bg-change-CEO, .bg-change-travel, .bg-change-face, .bg-change-blue {
         font-size: 16px!important;
       }
 
-      .bg-change-art, .bg-change-travel {
+      .bg-change-art, .bg-change-travel, .bg-change-blue {
         width: 140px!important;
         line-height: 48px!important;
       }
@@ -106,8 +119,23 @@
       .travel-content {
         padding: 25px 15px 40px 15px!important;
       }
- 
 
+      .travel-spacing {
+        padding-bottom: 30px!important;
+      }
+
+      .GIF-spacing {
+        padding: 15px 0px 0px 0px!important;
+        text-align: center!important;
+      }
+
+      .GIF-header {
+        font-size: 26px!important;
+      }
+
+      .footer-text {
+        font-size: 14px!important;
+      }
     }
      
     </style>
@@ -118,6 +146,10 @@
         </div>
         <!-- Insert &#847;&zwnj;&nbsp; hack after hidden preview text -->
         <div style="display: none; max-height: 0px; overflow: hidden;">
+        &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
+        &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
+        &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
+        &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
         &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
         &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
         &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
@@ -152,7 +184,7 @@
                                 <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
                                   <tr>
                                     <td align="center" style="text-align:center;">
-                                      <img src="https://i.postimg.cc/4xLPjn3Z/header.png" width="100%" style="height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 600px;" alt="The Christian Travel Journal Sojourner">
+                                      <img src="https://i.postimg.cc/4xLPjn3Z/header.png"  style="width: 100%; height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 600px;" alt="The Christian Travel Journal Sojourner">
                                     </td>
                                   </tr>
                                 </table>
@@ -165,16 +197,16 @@
                             <!--[if mso]>
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100% dir="rtl">
                             <tr>
-                            <td style="width:50%;" valign="middle" dir="ltr">
+                            <td style="width:50%;" valign="top" dir="ltr">
                             <![endif]-->
-                            <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;direction: ltr;">
+                            <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;direction: ltr;;">
                               <div>
-                                <img class="mobile-img" src="https://i.postimg.cc/cHQQ1Jdv/article-1-photo.png" width="100%" style="height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 300px;" alt="Cobblestone street with Spanish style buildings." title="The Mediterranean">
+                                <img class="mobile-img" src="https://i.postimg.cc/cHQQ1Jdv/article-1-photo.png"  style="width: 100%;height: auto;border: 0;font-size: 24px;color: #e41717;max-width: 300px;display: block;" alt="Cobblestone street in the Mediterranean." title="The Mediterranean">
                               </div>
                             </div>
                             <!--[if mso]>
                             </td>
-                            <td style="width:50%;" valign="middle" dir="ltr">
+                            <td style="width:50%;" valign="top" dir="ltr">
                             <![endif]-->
                             <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;direction: ltr;">
                               <div class="mobile-text" style="text-align: left;padding: 10px 35px 20px 35px;">
@@ -184,7 +216,7 @@
                                     <h2 class="h-text" style="margin-top:0;font-size: 24px;line-height: 1.3;color: #16749e;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;">
                                         GEMS OF THE MEDITERRANEAN
                                     </h2>
-                                    <p class="p-text" style="font-size: 17px;line-height: 1.8;color: #5d5752;font-weight: 400;font-family: 'Lato', sans-serif;">
+                                    <p class="p-text" style="font-size: 16px;line-height: 1.7;color: #5d5752;font-weight: 400;font-family: 'Lato', sans-serif;">
                                         We’ve found that some of the most memorable Christian travel experiences happen in unexpected places. Visit one of these hidden gems and you’ll never forget the experience. A few are likely to become major travel hot spots. That means now is the time to travel!
                                     </p>
                                     <div style="padding-top: 10px;">
@@ -213,23 +245,23 @@
                             <!--[if mso]>
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100% dir="rtl">
                             <tr>
-                            <td style="width:50%;" valign="middle" dir="ltr">
+                            <td style="width:50%;" valign="top" dir="ltr">
                             <![endif]-->
-                            <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
+                            <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
                                 <div>
-                                  <img class="mobile-img" src="https://i.postimg.cc/y6mPsLNL/article-2-photo.png" width="100%" style="height: 600px;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 300px;" alt="Lisa Harper conducting a speech." title="Lisa Harper">
+                                  <img class="mobile-img" src="https://i.postimg.cc/y6mPsLNL/article-2-photo.png"  style="width: 100%;height: auto;border: 0;font-size: 24px;color: #e41717;max-width: 300px;display: block;" alt="Lisa Harper conducting a speech." title="Lisa Harper">
                                 </div>
                             </div>
                             <!--[if mso]>
                             </td>
-                            <td style="width:50%;" valign="middle" dir="ltr">
+                            <td style="width:50%;" valign="top" dir="ltr">
                             <![endif]-->
                             <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
                                 <div class="mobile-text" style="text-align: left;padding: 10px 35px 20px 35px;">
                                       <h2 class="h-text" style="margin-bottom:0;font-size: 24px;line-height: 1.3;color: #16749e;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;letter-spacing: .25px;">
                                           HOW TRAVEL GROWS OUR GRATITUDE
                                       </h2>
-                                      <p class="p-text" style="font-size: 17px;line-height: 1.8;color: #5d5752;font-weight: 400;font-family: 'Lato', sans-serif;">
+                                      <p class="p-text" style="font-size: 16px;line-height: 1.7;color: #5d5752;font-weight: 400;font-family: 'Lato', sans-serif;">
                                         A deeply personal and moving reflection from Lisa Harper on how travel can open us to experience God, love those around us and even increase our awareness of all we have to be grateful for. Getting out of our comfort zones can expand the horizons of our hearts and fuel our appreciation for God’s gifts to us.
                                       </p>
                                       <div style="padding-top: 10px;">
@@ -256,11 +288,11 @@
                           <!-- Start Divider 1 -->
                           <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="max-width: 600px;">
                             <tr>
-                              <td align="center" style="text-align:center;background-color: #16749e;">
+                              <td align="center" style="text-align:center;background-color: #16749e;padding: 20px;">
                                 <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
                                   <tr>
                                     <td align="center" style="text-align:center;">
-                                      <h3 class="divider-text" style="font-size: 24px;line-height: 1.3;color: #ffffff;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;">
+                                      <h3 class="divider-text" style="margin:0;font-size: 24px;line-height: 1.3;color: #ffffff;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;">
                                         WHY WE TRAVEL
                                       </h3>
                                     </td>
@@ -278,7 +310,7 @@
                                   <tr>
                                     <td align="center" style="text-align:center;">
                                         <a href="https://www.youtube.com/watch?v=HwgkqXy0qog" target="_blank" style="text-decoration: none;">
-                                            <img src="https://i.postimg.cc/W1hgF82L/YouTube.png" width="100%" style="height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 600px;" alt="Thumbnail of medium-sized boats carrying passengers across a harbor." title="Watch video">
+                                            <img src="https://i.postimg.cc/W1hgF82L/YouTube.png"  style="width: 100%; height: auto;border: 0;display: block;font-size: 24px;color: #e41717;max-width: 600px;" alt="Thumbnail of medium-sized boats carrying passengers across a harbor." title="Watch video">
                                         </a> 
                                     </td>
                                   </tr>
@@ -295,7 +327,7 @@
                                   <tr>
                                     <td align="center" style="text-align:center;">
                                         <a href="https://travelthatgives.org/cause/sustainable-farm-for-haitian-orphanage/" target="_blank" style="text-decoration: none;">
-                                            <img src="https://i.postimg.cc/fyCmXgtZ/foundation-graphic.png" width="100%" style="height: auto;border: 0;vertical-align: middle;font-size: 16px;color: #e41717;max-width: 600px;" 
+                                            <img src="https://i.postimg.cc/fyCmXgtZ/foundation-graphic.png" width="100%" style="height: auto;border: 0;display: block;font-size: 16px;color: #e41717;max-width: 600px;" 
                                             alt="Text that states 'TRAVEL THAT GIVES. Give Back to the places you love! 
                                             Your donations will provide vital school supplies for orphans in Haiti.' 
                                             Image of Haitian school children. Link that states 'GIVE TODAY'" title="Travel that gives - GIVE TODAY!">
@@ -312,23 +344,23 @@
                             <!--[if mso]>
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100% dir="rtl">
                             <tr>
-                            <td style="width:50%;" valign="middle" dir="ltr">
+                            <td style="width:50%;" valign="top" dir="ltr">
                             <![endif]-->
-                            <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
+                            <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
                                 <div>
-                                  <img class="mobile-img" src="https://i.postimg.cc/fyfjCRPG/evan-carlson.png" width="100%" style="height: 477px;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 300px;" alt="Evan Carlson and wife." title="Evan Carlson">
+                                  <img class="mobile-img" src="https://i.postimg.cc/fyfjCRPG/evan-carlson.png"  style="width: 100%;height: auto;border: 0;display: block;font-size: 24px;color: #e41717;max-width: 300px;" alt="Evan Carlson and wife." title="Evan Carlson">
                                 </div>
                             </div>
                             <!--[if mso]>
                             </td>
-                            <td style="width:50%;" valign="middle" dir="ltr">
+                            <td style="width:50%;" valign="top" dir="ltr">
                             <![endif]-->
                             <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
                                 <div style="text-align: left;padding: 10px 35px 20px 35px;">
-                                      <p class="p-text" style="font-size: 17px;line-height: 1.8;color: #5d5752;font-weight: 400;font-family: 'Lato', sans-serif;">
+                                      <p class="p-text" style="font-size: 16px;line-height: 1.7;color: #5d5752;font-weight: 400;font-family: 'Lato', sans-serif;">
                                         "I cannot say thank you enough to the entire Inspiration Cruises & Tours team. Truly, it was amazing to witness their level of professionalism, and how they went WAY above the call of duty. We could not have pulled this off without you."
                                       </p>
-                                      <p class="p-text" style="font-size: 17px;line-height: 1.6;color: #16749E;font-weight: 700;font-family: 'Lato', sans-serif;">
+                                      <p class="p-text" style="font-size: 16px;line-height: 1.7;color: #16749E;font-weight: 700;font-family: 'Lato', sans-serif;">
                                         Evan Carlson<br>President &amp; CEO<br><span style="font-weight: 400;">Family Life Radio</span>
                                       </p>
                                       <div style="padding: 10px 0px 10px 0px;">
@@ -355,11 +387,11 @@
                           <!-- Start Divider 2 -->
                           <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="max-width: 600px;">
                             <tr>
-                              <td align="center" style="text-align:center;background-color: #16749e;padding: 0px 20px;">
+                              <td align="center" style="text-align:center;background-color: #16749e;padding: 20px;">
                                 <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
                                   <tr>
                                     <td align="center" style="text-align:center;">
-                                      <h3 class="divider-text" style="font-size: 24px;line-height: 1.3;color: #ffffff;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;">
+                                      <h3 class="divider-text" style="margin:0;font-size: 24px;line-height: 1.3;color: #ffffff;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;">
                                         INSPIRATION TRAVEL INSIGHTS
                                       </h3>
                                     </td>
@@ -374,16 +406,16 @@
                             <!--[if mso]>
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100% dir="rtl">
                             <tr>
-                            <td style="width:50%;" valign="middle" dir="ltr">
+                            <td style="width:50%;" valign="top" dir="ltr">
                             <![endif]-->
-                            <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;direction: ltr;">
+                            <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;direction: ltr;">
                               <div>
-                                <img class="mobile-img" src="https://i.postimg.cc/d0Z2XBXm/journey-israel.png" width="100%" style="height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 300px;" alt="Two tourist riding a Camel in Jerusalem." title="Camel ride in Jerusalem">
+                                <img class="mobile-img" src="https://i.postimg.cc/d0Z2XBXm/journey-israel.png"  style="width: 100%;height: auto;border: 0;display: block;font-size: 24px;color: #e41717;max-width: 300px;" alt="Tourist riding a Camel in Jerusalem." title="Camel ride in Jerusalem">
                               </div>
                             </div>
                             <!--[if mso]>
                             </td>
-                            <td style="width:50%;" valign="middle" dir="ltr">
+                            <td style="width:50%;" valign="top" dir="ltr">
                             <![endif]-->
                             <div class="mobile-travel"style="width:100%;max-width:300px;display:inline-block;vertical-align:top;direction: ltr;">
                               <div class="travel-content" style="text-align: center;padding: 20px 20px 10px 25px;">
@@ -416,16 +448,16 @@
                             <!--[if mso]>
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100% dir="rtl">
                             <tr>
-                            <td style="width:50%;" valign="middle" dir="ltr">
+                            <td style="width:50%;" valign="top" dir="ltr">
                             <![endif]-->
-                            <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;">
+                            <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
                                 <div>
-                                  <img class="mobile-img" src="https://i.postimg.cc/cC0fvNJX/rome.png" width="100%" style="height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 300px;" alt="Inside the Roman Colosseum." title="Roman Colosseum">
+                                  <img class="mobile-img" src="https://i.postimg.cc/cC0fvNJX/rome.png"  style="width: 100%;height: auto;border: 0;display: block;font-size: 24px;color: #e41717;max-width: 300px;" alt="Inside the Roman Colosseum." title="Roman Colosseum">
                                 </div>
                             </div>
                             <!--[if mso]>
                             </td>
-                            <td style="width:50%;" valign="middle" dir="ltr">
+                            <td style="width:50%;" valign="top" dir="ltr">
                             <![endif]-->
                             <div class="mobile-travel" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
                                 <div class="travel-content" style="text-align: center;padding: 25px 20px 20px 25px;">
@@ -456,11 +488,11 @@
                           <!-- Start Divider 3 -->
                           <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="max-width: 600px;">
                               <tr>
-                                  <td align="center" style="text-align:center;background-color: #16749e;">
+                                  <td align="center" style="text-align:center;background-color: #16749e;padding: 20px;">
                                     <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
                                         <tr>
                                         <td align="center" style="text-align:center;">
-                                            <h3 class="divider-text" style="font-size: 24px;line-height: 1.3;color: #ffffff;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;">
+                                            <h3 class="divider-text" style="margin:0;font-size: 24px;line-height: 1.3;color: #ffffff;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;">
                                                 UPCOMING TRAVEL EVENTS
                                             </h3>
                                         </td>
@@ -475,28 +507,28 @@
                               <!--[if mso]>
                               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                               <tr>
-                              <td style="width:185px;" valign="middle">
+                              <td style="width:185px;" valign="top">
                               <![endif]-->
-                              <div class="column-1" style="width:100%;max-width:185px;display:inline-block;vertical-align:middle;">
-                                  <div style="padding-bottom: 15px;">
+                              <div class="mobile-travel" style="width:100%;max-width:185px;display:inline-block;vertical-align:top;">
+                                  <div class="travel-spacing" style="padding-bottom: 10px;">
                                     <a href="https://travel.inspirationcruises.com/cruise-to-the-caribbean-with-the-collingsworth-family" target="_blank" style="text-decoration: none;">
                                         <img src="https://i.postimg.cc/25gw8JvK/headshotcaribbean.png" width="164" style="height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 164px;" alt="The Collingsworth Family" title="Collingsworth Family">
                                     </a>
-                                    <h4 style="font-size: 14px;line-height: 1.6;color: #696969;font-weight: 700;font-family: 'Lato', sans-serif;">
+                                    <h4 style="margin-bottom: 0;font-size: 14px;line-height: 1.6;color: #696969;font-weight: 700;font-family: 'Lato', sans-serif;">
                                         The Collingsworth Family Presents the Inspiration Encounter Goes to Sea
                                     </h4>
-                                    <p style="font-size: 14px;line-height: 1.6;color: #696969;font-weight: 400;font-family: 'Lato', sans-serif;">
-                                        December 28, 2022 -<br>January 4, 2023
+                                    <p style="margin-top: 8px;font-size: 14px;line-height: 1.6;color: #696969;font-weight: 400;font-family: 'Lato', sans-serif;text-decoration: none;">
+                                        December 28, 2022 -<br> January 4, 2023
                                     </p>
                                     <div>
                                         <!--[if mso]>
                                         <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://travel.inspirationcruises.com/cruise-to-the-caribbean-with-the-collingsworth-family" style="height:39px;v-text-anchor:middle;width:124px;" arcsize="11%" strokecolor="#16749e" fillcolor="#16749e">
                                           <w:anchorlock/>
-                                          <center style="color:#ffffff;font-family: 'Lato', sans-serif;font-size:20px;font-weight:bold;">READ MORE</center>
+                                          <center style="color:#ffffff;font-family: 'Lato', sans-serif;font-size:14px;font-weight:400;">READ MORE</center>
                                         </v:roundrect>
                                       <![endif]-->
                                         <a class="bg-change-blue" href="https://travel.inspirationcruises.com/cruise-to-the-caribbean-with-the-collingsworth-family" target="_blank"
-                                        style="background-color:#16749e;border:2px solid #16749e;border-radius:5px;color:#ffffff;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:14px;font-weight:bold;line-height:39px;text-align:center;text-decoration:none;width:124px;-webkit-text-size-adjust:none;mso-hide:all;">
+                                        style="background-color:#16749e;border:2px solid #16749e;border-radius:5px;color:#ffffff;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:14px;font-weight:400;line-height:39px;text-align:center;text-decoration:none;width:124px;-webkit-text-size-adjust:none;mso-hide:all;">
                                             VIEW EVENT
                                         </a>
                                     </div>
@@ -504,28 +536,28 @@
                               </div>
                               <!--[if mso]>
                               </td>
-                              <td style="width:185px;" valign="middle">
+                              <td style="width:185px;" valign="top">
                               <![endif]-->
-                              <div class="column-2" style="width:100%;max-width:185px;display:inline-block;vertical-align:middle;">
-                                <div style="padding-bottom: 15px;">
+                              <div class="mobile-travel" style="width:100%;max-width:185px;display:inline-block;vertical-align:top;">
+                                <div class="travel-spacing" style="padding-bottom: 10px;">
                                     <a href="https://travel.inspirationcruises.com/tour-of-israel-with-lisa-harper-2023" target="_blank" style="text-decoration: none;">
                                         <img src="https://i.postimg.cc/VNJgw1St/headshot.png" width="164" style="height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 164px;" alt="Lisa Harper" title="Lisa Harper">
                                     </a>
-                                    <h4 style="font-size: 14px;line-height: 1.6;color: #696969;font-weight: 700;font-family: 'Lato', sans-serif;">
+                                    <h4 style="margin-bottom: 0;font-size: 14px;line-height: 1.6;color: #696969;font-weight: 700;font-family: 'Lato', sans-serif;">
                                         Tour of Israel<br>with<br>Lisa Harper
                                     </h4>
-                                    <p style="font-size: 14px;line-height: 1.6;color: #696969;font-weight: 400;font-family: 'Lato', sans-serif;">
+                                    <p style="margin-top: 8px;font-size: 14px;line-height: 1.6;color: #696969;font-weight: 400;font-family: 'Lato', sans-serif;text-decoration: none;">
                                         March 21 - 31, 2023
                                     </p>
                                     <div>
                                         <!--[if mso]>
                                         <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://travel.inspirationcruises.com/tour-of-israel-with-lisa-harper-2023" style="height:39px;v-text-anchor:middle;width:124px;" arcsize="11%" strokecolor="#16749e" fillcolor="#16749e">
                                           <w:anchorlock/>
-                                          <center style="color:#ffffff;font-family: 'Lato', sans-serif;font-size:20px;font-weight:bold;">READ MORE</center>
+                                          <center style="color:#ffffff;font-family: 'Lato', sans-serif;font-size:14px;font-weight:400;">READ MORE</center>
                                         </v:roundrect>
                                       <![endif]-->
                                         <a class="bg-change-blue" href="https://travel.inspirationcruises.com/tour-of-israel-with-lisa-harper-2023" target="_blank"
-                                        style="background-color:#16749e;border:2px solid #16749e;border-radius:5px;color:#ffffff;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:14px;font-weight:bold;line-height:39px;text-align:center;text-decoration:none;width:124px;-webkit-text-size-adjust:none;mso-hide:all;">
+                                        style="background-color:#16749e;border:2px solid #16749e;border-radius:5px;color:#ffffff;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:14px;font-weight:400;line-height:39px;text-align:center;text-decoration:none;width:124px;-webkit-text-size-adjust:none;mso-hide:all;">
                                             VIEW EVENT
                                         </a>
                                     </div>
@@ -533,28 +565,28 @@
                               </div>
                               <!--[if mso]>
                               </td>
-                              <td style="width:185px;" valign="middle">
+                              <td style="width:185px;" valign="top">
                               <![endif]-->
-                              <div class="column-3" style="width:100%;max-width:185px;display:inline-block;vertical-align:middle;">
-                                <div style="padding-bottom: 15px;">
+                              <div class="mobile-travel" style="width:100%;max-width:185px;display:inline-block;vertical-align:top;">
+                                <div  style="padding-bottom: 10px;">
                                     <a href="https://travel.inspirationcruises.com/inspirations-italy-tour" target="_blank" style="text-decoration: none;">
-                                        <img src="https://i.postimg.cc/NMTxy4kf/italy.png" width="164" style="height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 164px;" alt="Outside of Roman Colosseum." title="Roman Colosseum">
+                                        <img src="https://i.postimg.cc/NMTxy4kf/italy.png" width="164" style="height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 164px;" alt="Outside of the Roman Colosseum." title="Roman Colosseum">
                                     </a>
-                                    <h4 style="font-size: 14px;line-height: 1.6;color: #696969;font-weight: 700;font-family: 'Lato', sans-serif;">
+                                    <h4 style="margin-bottom: 0;font-size: 14px;line-height: 1.6;color: #696969;font-weight: 700;font-family: 'Lato', sans-serif;">
                                         Inspiration's<br>Italy Tour
                                     </h4>
-                                    <p style="font-size: 14px;line-height: 1.6;color: #696969;font-weight: 400;font-family: 'Lato', sans-serif;">
+                                    <p style="margin-top: 8px;font-size: 14px;line-height: 1.6;color: #696969;font-weight: 400;font-family: 'Lato', sans-serif;text-decoration: none;">
                                         March 24 - April 1,<br>2023
                                     </p>
                                     <div>
                                         <!--[if mso]>
                                         <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://travel.inspirationcruises.com/inspirations-italy-tour" style="height:39px;v-text-anchor:middle;width:124px;" arcsize="11%" strokecolor="#16749e" fillcolor="#16749e">
                                           <w:anchorlock/>
-                                          <center style="color:#ffffff;font-family: 'Lato', sans-serif;font-size:20px;font-weight:bold;">READ MORE</center>
+                                          <center style="color:#ffffff;font-family: 'Lato', sans-serif;font-size:14px;font-weight:400;">READ MORE</center>
                                         </v:roundrect>
                                       <![endif]-->
                                         <a class="bg-change-blue" href="https://travel.inspirationcruises.com/inspirations-italy-tour" target="_blank"
-                                        style="background-color:#16749e;border:2px solid #16749e;border-radius:5px;color:#ffffff;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:14px;font-weight:bold;line-height:39px;text-align:center;text-decoration:none;width:124px;-webkit-text-size-adjust:none;mso-hide:all;">
+                                        style="background-color:#16749e;border:2px solid #16749e;border-radius:5px;color:#ffffff;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:14px;font-weight:400;line-height:39px;text-align:center;text-decoration:none;width:124px;-webkit-text-size-adjust:none;mso-hide:all;">
                                             VIEW EVENT
                                         </a>
                                     </div>
@@ -570,11 +602,11 @@
                           <!-- Start Social Media -->
                           <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="max-width: 600px;">
                             <tr>
-                                <td align="center" style="text-align:center;background-color: #16749e;padding: 25px 20px 20px 20px;">
+                                <td align="center" style="text-align:center;background-color: #16749e;padding: 20px;">
                                   <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
                                       <tr>
                                         <td align="center" style="text-align:center;padding-bottom: 5px;">
-                                            <h3 class="divider-text" style="margin:0px;font-size: 24px;line-height: 1.3;color: #ffffff;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;">
+                                            <h3 class="divider-text" style="margin:0;font-size: 24px;line-height: 1.3;color: #ffffff;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;">
                                                 FOLLOW US ON SOCIAL MEDIA
                                             </h3>
                                         </td>
@@ -582,23 +614,23 @@
                                       <tr>
                                         <td align="center" style="text-align: center;display: inline-block;">
                                           <a href="https://www.facebook.com/inspirationcruises" target="_blank" style="text-decoration: none;">
-                                              <img src="https://i.postimg.cc/y8Ynf0sv/facebook-logo-white.png" width="24" style="border: 0;height: auto;font-size: 24px;color: #e41717;" alt="Facebook icon">
+                                              <img src="https://i.postimg.cc/y8Ynf0sv/facebook-logo-white.png" width="24" style="border: 0;height: auto;font-size: 24px;color: #bdb4b4;" alt="Facebook icon">
                                           </a>
                                         </td>
                                         <td align="center" style="text-align: center;display: inline-block;padding-left: 20px;">
                                           <a href="https://twitter.com/inspiration" target="_blank" style="text-decoration: none;">
-                                              <img src="https://i.postimg.cc/FHBbDqPH/twitter-logo-white.png" width="24" style="border: 0;height: auto;font-size: 24px;color: #e41717;" alt="Twitter icon">
+                                              <img src="https://i.postimg.cc/FHBbDqPH/twitter-logo-white.png" width="24" style="border: 0;height: auto;font-size: 24px;color: #bdb4b4;" alt="Twitter icon">
                                           </a>
                                         </td>
                                         <td align="center" style="text-align: center;display: inline-block;padding-left: 20px;">
                                           <a href="https://www.instagram.com/inspirationcruises/" target="_blank" style="text-decoration: none;">
                                               <img src="https://i.postimg.cc/MTk78BJk/instagram-logo-white.png
-                                              " width="24" style="border: 0;height: auto;font-size: 24px;color: #e41717;" alt="Instagram icon">
+                                              " width="24" style="border: 0;height: auto;font-size: 24px;color: #bdb4b4;" alt="Instagram icon">
                                           </a>
                                         </td>
                                         <td align="center" style="text-align: center;display: inline-block;padding-left: 20px;">
                                           <a href="https://www.youtube.com/InspirationCruises" target="_blank" style="text-decoration: none;">
-                                              <img src="https://i.postimg.cc/NfG1YYS0/youtube-logo-white.png" width="24" style="border: 0;height: auto;font-size: 24px;color: #e41717;" alt="YouTube icon">
+                                              <img src="https://i.postimg.cc/NfG1YYS0/youtube-logo-white.png" width="24" style="border: 0;height: auto;font-size: 24px;color: #bdb4b4;" alt="YouTube icon">
                                           </a>
                                         </td>
                                       </tr>
@@ -608,25 +640,25 @@
                           </table>
                           <!-- End Social Media -->
                           <!-- Start GIF -->
-                          <div class="two-col" style="text-align:center;font-size:0;padding: 15px 20px 65px 20px;">
+                          <div class="two-col" style="text-align:center;font-size:0;padding: 15px 20px 30px 20px;">
                               <!--[if mso]>
                               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                               <tr>
                               <td style="width:50%;" valign="middle">
                               <![endif]-->
-                              <div class="column-1" style="width:100%;max-width:270px;display:inline-block;vertical-align:top;">
-                                  <div style="text-align: center;padding:15px 32px 0px 0px">
-                                    <img src="https://i.postimg.cc/zGg3YczB/GIF.gif" width="170" style="height: 368px;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;" alt="GIF of companies Instagram page." title="Instagram">
+                              <div class="mobile-travel" style="width:100%;max-width:270px;display:inline-block;vertical-align:top;">
+                                  <div class="GIF-spacing" style="text-align: center;padding:15px 32px 0px 0px">
+                                    <img class="mobile-img" src="https://i.postimg.cc/zGg3YczB/GIF.gif"  style="width: 100%;max-width: 170px;height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;" alt="GIF of the company's Instagram page." title="Instagram">
                                   </div>
                               </div>
                               <!--[if mso]>
                               </td>
                               <td style="width:50%;" valign="top">
                               <![endif]-->
-                              <div class="column-2" style="width:100%;max-width:270px;display:inline-block;vertical-align:top;">
-                                  <div style="text-align: left;padding-top: 10px;">
-                                    <h2 style="font-size: 20px;line-height: 1.3;color: #16749e;font-weight: 700;font-family: 'Lato', sans-serif;">
-                                        Connect with other Inspiration travelers and<br> stay up-to-date on<br> upcoming cruises & tours.
+                              <div class="mobile-travel" style="width:100%;max-width:270px;display:inline-block;vertical-align:top;">
+                                  <div  style="text-align: left;padding-top: 10px;padding-right: 20px;">
+                                    <h2 class="GIF-header" style="font-size: 20px;line-height: 1.3;color: #16749e;font-weight: 700;font-family: 'Lato', sans-serif;">
+                                        Connect with other Inspiration travelers and stay up-to-date on upcoming cruises & tours!
                                     </h2>
                                     <p style="font-size: 15px;line-height: 1.8;color: #696969;font-weight: 400;font-family: 'Lato', sans-serif;">
                                         Love God? Love travel? Join our private Facebook group to cultivate friendships and share your exceptional travel experiences.
@@ -660,26 +692,26 @@
                                   <tr>
                                     <td align="center" style="text-align:center;">
                                       <a href="https://www.inspirationcruises.com/" target="_blank" style="text-decoration: none;">
-                                        <img src="https://i.postimg.cc/bY9QKd6M/logo-white.png" width="100%" style="height: 57px;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 140px;" alt="Inspiration cruises and tours logo." title="Inspirations Cruises & Tours">
+                                        <img src="https://i.postimg.cc/bY9QKd6M/logo-white.png" width="100%" style="width: 100%;height: 57px;border: 0;vertical-align: middle;font-size: 24px;color: #bdb4b4;max-width: 140px;" alt="Inspiration cruises and tours logo." title="Inspirations Cruises & Tours">
                                       </a>
                                     </td>
                                   </tr>
                                   <tr>
                                     <td align="center" style="text-align:center;display: inline-block;">
                                       <a href="https://www.inspirationcruises.com/-/blog/" target="_blank" style="text-decoration: none;">
-                                          <p style="font-size: 11px;line-height: 1.5;color: #ffffff;font-weight: 400;font-family: 'Lato', sans-serif;text-decoration: underline;">
+                                          <p class="footer-text" style="font-size: 11px;line-height: 1.5;color: #ffffff;font-weight: 400;font-family: 'Lato', sans-serif;text-decoration: underline;">
                                             Preferences
                                           </p>
                                       </a>
                                     </td>
                                     <td align="center" style="text-align:center;display: inline-block;padding: 0px 10px;">
-                                      <p style="font-size: 11px;line-height: 1.5;color: #ffffff;font-weight: 400;font-family: 'Lato', sans-serif;">
+                                      <p class="footer-text" style="font-size: 11px;line-height: 1.5;color: #ffffff;font-weight: 400;font-family: 'Lato', sans-serif;">
                                         |
                                       </p>
                                     </td>
                                     <td align="center" style="text-align:center;display: inline-block;">
                                       <a href="https://www.inspirationcruises.com/-/blog/" target="_blank" style="text-decoration: none;">
-                                          <p style="font-size: 11px;line-height: 1.5;color: #ffffff;font-weight: 400;font-family: 'Lato', sans-serif;text-decoration: underline;">
+                                          <p class="footer-text" style="font-size: 11px;line-height: 1.5;color: #ffffff;font-weight: 400;font-family: 'Lato', sans-serif;text-decoration: underline;">
                                             Unsubscribe
                                           </p>
                                       </a>
