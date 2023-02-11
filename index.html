@@ -161,13 +161,13 @@
 	<![endif]-->
 </head>
 <body style="Margin:0;padding:0;min-width:100%;background-color:#EFEFEF;">
-   <!--[if mso]>
-      <style type="text/css">
-         body {background-color: #EFEFEF!important;}
-         body, table, td, p, a {font-family: sans-serif, Arial, Helvetica!important;}
-      </style>
-   <![endif]-->
    <center style="width: 100%;background-color: #EFEFEF;">
+      <!-- Start Windows mail ghost table for background rendering -->
+      <!--[if mso >
+         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #EFEFEF;">
+         <tr>
+         <td>
+      <![endif]-->
       <div style="max-width: 600px;background-color: #ffffff;">
          <div style="display: none; max-height: 0px; overflow: hidden;">
             Amazing updates and articles... &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
@@ -874,12 +874,18 @@
             <!-- End Footer -->
          </table>
          <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+         <![endif]-->
+         <!-- End ghost table for proper rendering in MSO 2007 - 2010 -->
+      </div>
+      <!--[if mso >
          </td>
          </tr>
          </table>
-         <![endif]-->
-          <!-- End ghost table for proper rendering in MSO 2007 - 2010 -->
-      </div>
+      <![endif]-->
+      <!-- End Windows mail ghost table for background rendering -->
    </center>
 </body>
 </html>
