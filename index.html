@@ -1,889 +1,204 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="en">
 <head>
-    <!-- For clients that strip head tag -->
-</head>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
-    <meta name="color-scheme" content="light">
-    <meta name="supported-color-schemes" content="light">
-    <!--[if !mso]><!-->
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--<![endif]-->
-    <title>Travel Journal</title>
-    <!--[if mso]>
-    <style type="text/css">
-        table {border-collapse:collapse;border:0;border-spacing:0;margin:0;}
-        div, td {padding:0;}
-        div {margin:0 !important;}
-    </style>
-    <noscript>
-    <xml>
-        <o:OfficeDocumentSettings>
-            <o:PixelsPerInch>96</o:PixelsPerInch>
-        </o:OfficeDocumentSettings>
-    </xml>
-    </noscript>
-    <![endif]-->
-   <style type="text/css">
-      /* Fonts */
-      @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-
-      /* CSS Reset Start */
-      * {
-            box-sizing: border-box;
-        }
-      table {
-			border-spacing: 0;
-		}
-      td {
-         padding: 0;
-      }
-
-      img {
-         border: 0;
-      }
-
-      /* Removes blue and underline defaults in IOS */
-      a[x-apple-data-detectors] {
-      color:inherit !important;
-      text-decoration:none !important;
-      font-size:inherit !important;
-      font-family:inherit !important;
-      font-weight:inherit !important;
-      line-height:inherit !important;
-      }
-
-      /* Removes Samsung blue links */
-      #MessageViewBody a {
-      color: inherit;
-      text-decoration: none;
-      font-size: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      line-height: inherit;
-      }
-      /* CSS Reset End */
-      /* Media Queries */
-      @media screen and (max-width: 599.98px) {
-        /* General styling */
-        .mobile-block {
-          display: block!important;
-          max-width: 600px!important;
-        }
-        .mobile-img, .mobile-content {
-          width: 600px!important;
-          max-width: 600px!important;
-        }
-        .h-text {
-        font-size: 29px!important;
-        line-height: 29pt!important;
-      }
-      .p-text {
-        font-size: 20px!important;
-        line-height: 24pt!important;
-      }
-      .divider-text {
-        font-size: 26px!important;
-      }
-      /* Button styling */
-      .bg-change-art, .bg-change-CEO, .bg-change-travel, .bg-change-face, .bg-change-blue {
-        font-size: 16px!important;
-      }
-      .bg-change-art, .bg-change-travel, .bg-change-blue {
-        width: 140px!important;
-        line-height: 48px!important;
-      }
-      .bg-change-CEO {
-        width: 200px!important;
-        line-height: 46px!important;
-      }
-      .bg-change-face {
-        width: 220px!important;
-        line-height: 46px!important;
-      }
-      /* Section styling */
-      .article-padding {
-        padding: 0px 35px 40px 35px!important;
-        }
-      .testimony-padding {
-        padding: 0px 20px 30px 35px!important;
-      }
-      .events-block {
-        width: 560px!important;
-      }
-      .events-hide {
-        display: none!important;
-      }
-      .events-padding {
-        padding-bottom: 25px!important;
-      }
-      .GIF-padding, .GIF-section {
-        padding: 0px!important;
-      }
-      .GIF-header {
-        font-size: 26px!important;
-      }
-      .GIF-content {
-        padding: 10px 20px 30px 20px!important;
-      }
-      .footer-img {
-        width: 180px!important;
-        height: 73px!important;
-      }
-      .footer-text {
-        font-size: 14px!important;
-        line-height: 15pt!important;
-      }
-      }
-      /* Custom Dark Mode Colors */
-      :root {
-         color-scheme: light dark;
-         supported-color-schemes: light dark;
-      }
-      @media (prefers-color-scheme: dark) {
-         body, center, .darkmode-bg {
-            background: #2d2d2d!important;
-            color: #ffffff!important;
-         }
-         .darkmode-transparent {
-            background-color: transparent!important;
-         }
-      }
-   </style>
-	<!--[if mso]>
-		<style type="text/css">
-			table {border-collapse: collapse !important;}
-		</style>
-	<![endif]-->
+    <meta name="description" content="Place general description of content here." />
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nunito:wght@400;500;600;700&family=Poppins:wght@600;700&family=Roboto:wght@400;700&display=swap"/>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script defer src="js/script.js"></script>
+    <title>Kenneth Graham Email Developer</title>
 </head>
-<body style="Margin:0;padding:0;min-width:100%;background-color:#EFEFEF;">
-   <center style="width: 100%;background-color: #EFEFEF;">
-      <!--[if mso >
-      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #EFEFEF;">
-        <tr>
-          <td>
-      <![endif]-->
-      <div style="max-width: 600px;background-color: #ffffff;">
-         <div style="display: none; max-height: 0px; overflow: hidden;">
-            Amazing updates and articles... &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-            &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;&#847; &#847; &#847; &#847; &#847; 
-         </div>
-         <!-- Start ghost table for proper rendering in MSO 2007 - 2010 -->
-         <!--[if mso]>
-            <table style="width: 600px;" width="600" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
-            <tr>
-            <td style="padding:0;">
-         <![endif]-->
-         <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="Margin:0;padding:0;width: 100%;max-width: 600px;background-color: #ffffff;">
-            <!-- Start Header -->
-            <tr>
-              <td>
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align:center;">
-                        <img src="https://i.postimg.cc/4xLPjn3Z/header.png"  width="600" style="display: block;height: auto;border: 0;font-size: 24px;color: #e41717;" alt="The Christian Travel Journal Sojourner">
-                      </td>
-                    </tr>
-                  </table>
-              </td>
-            </tr>    
-            <!-- End Header -->
-            <!-- Start Article Row 1 -->
-            <tr>
-              <td>
-                 <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" dir="rtl" style="direction: rtl;">
-                    <tr>
-                       <td class="two-col" style="font-size: 0;">
-                            <!--[if mso]>
-                              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                              <tr>
-                              <td valign="top" style="padding: 0;width: 300px;">
-                           <![endif]-->
-                          <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0" dir="ltr" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;direction: ltr;">
-                             <tr>
-                                <td>
-                                   <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                      <tr>
-                                         <td>
-                                            <img class="mobile-img" src="https://i.postimg.cc/cHQQ1Jdv/article-1-photo.png" width="300" style="height: auto;border: 0;font-size: 24px;color: #e41717;display: block;" alt="Cobblestone street in the Mediterranean." title="The Mediterranean">
-                                         </td>
-                                      </tr>
-                                   </table>
-                                </td>
-                             </tr>
-                          </table>
-                          <!--[if mso]>
-                            </td><td valign="top" style="padding: 0;width: 300px;">
-                          <![endif]-->
-                          <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0" dir="ltr" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;direction: ltr;">
-                           <tr>
-                              <td>
-                                 <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                    <tr>
-                                       <td class="article-padding" style="text-align: left;padding: 0px 35px 20px 35px;">
-                                        <h2 class="h-text" style="margin-bottom:0;margin-top: 25px;font-size: 24px;line-height: 24pt;color: #16749e;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;letter-spacing: .25px;">
-                                            7 HIDDEN
-                                        </h2>
-                                        <h2 class="h-text" style="margin-top:0;font-size: 24px;line-height: 24pt;color: #16749e;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;">
-                                            GEMS OF THE MEDITERRANEAN
-                                        </h2>
-                                        <p class="p-text" style="margin-bottom: 30px;font-size: 16px;line-height: 20pt;color: #5d5752;font-weight: 400;font-family: 'Lato', sans-serif;">
-                                            We’ve found that some of the most memorable Christian travel experiences happen in unexpected places. Visit one of these hidden gems and you’ll never forget the experience. A few are likely to become major travel hot spots. That means now is the time to travel!
-                                        </p>
-                                        <div>
-                                            <!--[if mso]>
-                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.inspirationcruises.com/-/blog/2022/08/09/7-hidden-gems-of-the-mediterranean/" style="height:46px;v-text-anchor:middle;width:164px;" arcsize="11%" strokecolor="#f3dc86" fillcolor="#f3dc86">
-                                              <w:anchorlock/>
-                                              <center style="color:#5d5752;font-family: 'Lato', sans-serif;font-size:20px;font-weight:bold;">READ MORE</center>
-                                            </v:roundrect>
-                                          <![endif]-->
-                                            <a class="bg-change-art" href="https://www.inspirationcruises.com/-/blog/2022/08/09/7-hidden-gems-of-the-mediterranean/" target="_blank"
-                                            style="background-color:#f3dc86;border:2px solid #f3dc86;border-radius:5px;color:#5d5752;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:20px;font-weight:bold;line-height:46px;text-align:center;text-decoration:none;width:164px;-webkit-text-size-adjust:none;mso-hide:all;">
-                                                READ MORE
-                                            </a>
-                                        </div>
-                                       </td>
-                                    </tr>
-                                 </table>
-                              </td>
-                           </tr>
-                        </table>
-                           <!--[if mso]>
-                             </td>
-                             </tr>
-                             </table>
-                          <![endif]-->
-                       </td>
-                    </tr>
-                 </table>
-              </td>
-           </tr>
-            <!-- End Article Row 1 -->
-            <!-- Start Article Row 2 -->
-            <tr>
-              <td>
-                 <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                       <td class="two-col" style="font-size: 0;">
-                            <!--[if mso]>
-                              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                              <tr>
-                              <td valign="top" style="padding: 0;width: 300px;">
-                           <![endif]-->
-                          <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
-                             <tr>
-                                <td>
-                                   <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                      <tr>
-                                         <td>
-                                            <img class="mobile-img" src="https://i.postimg.cc/y6mPsLNL/article-2-photo.png" width="300" style="height: auto;border: 0;font-size: 24px;color: #e41717;display: block;" alt="Lisa Harper conducting a speech." title="Lisa Harper">
-                                         </td>
-                                      </tr>
-                                   </table>
-                                </td>
-                             </tr>
-                          </table>
-                          <!--[if mso]>
-                            </td><td valign="top" style="padding: 0;width: 300px;">
-                          <![endif]-->
-                          <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
-                           <tr>
-                              <td>
-                                 <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                    <tr>
-                                       <td class="article-padding" style="text-align: left;padding: 0px 35px 20px 35px;">
-                                        <h2 class="h-text" style="margin-bottom:0;margin-top: 25px;font-size: 24px;line-height: 24pt;color: #16749e;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;letter-spacing: .25px;">
-                                            HOW TRAVEL GROWS OUR GRATITUDE
-                                        </h2>
-                                        <p class="p-text" style="margin-bottom: 30px;font-size: 16px;line-height: 20pt;color: #5d5752;font-weight: 400;font-family: 'Lato', sans-serif;">
-                                          A deeply personal and moving reflection from Lisa Harper on how travel can open us to experience God, love those around us and even increase our awareness of all we have to be grateful for. Getting out of our comfort zones can expand the horizons of our hearts and fuel our appreciation for God’s gifts to us.
-                                        </p>
-                                        <div style="padding-top: 10px;">
-                                            <!--[if mso]>
-                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.inspirationcruises.com/-/blog/2022/08/17/how-travel-grows-our-gratitude-by-lisa-harper/" style="height:46px;v-text-anchor:middle;width:164px;" arcsize="11%" strokecolor="#f3dc86" fillcolor="#f3dc86">
-                                              <w:anchorlock/>
-                                              <center style="color:#5d5752;font-family: 'Lato', sans-serif;font-size:20px;font-weight:bold;">READ MORE</center>
-                                            </v:roundrect>
-                                          <![endif]-->
-                                            <a class="bg-change-art" href="https://www.inspirationcruises.com/-/blog/2022/08/17/how-travel-grows-our-gratitude-by-lisa-harper/" target="_blank"
-                                            style="background-color:#f3dc86;border:2px solid #f3dc86;border-radius:5px;color:#5d5752;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:20px;font-weight:bold;line-height:46px;text-align:center;text-decoration:none;width:164px;-webkit-text-size-adjust:none;mso-hide:all;">
-                                                READ MORE
-                                            </a>
-                                        </div>
-                                       </td>
-                                    </tr>
-                                 </table>
-                              </td>
-                           </tr>
-                        </table>
-                           <!--[if mso]>
-                             </td>
-                             </tr>
-                             </table>
-                          <![endif]-->
-                       </td>
-                    </tr>
-                 </table>
-              </td>
-            </tr>
-            <!-- End Article Row 2 -->
-            <!-- Start Divider 1 -->
-            <tr>
-                <td>
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                      <tr>
-                        <td style="text-align:center;background-color: #16749e;padding: 20px;">
-                            <h3 class="divider-text" style="margin:0;font-size: 24px;line-height: 24pt;color: #ffffff;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;">
-                                WHY WE TRAVEL
-                              </h3>
-                        </td>
-                      </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- End Divider 1 -->
-            <!-- Start Video -->
-            <tr>
-                <td>
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 0;line-height: 0;">
-                      <tr>
-                        <td style="text-align:center;">
-                            <a href="https://www.youtube.com/watch?v=HwgkqXy0qog" target="_blank" style="text-decoration: none;">
-                                <img src="https://i.postimg.cc/W1hgF82L/YouTube.png"  width="600" style="width: 100%;height: auto;border: 0;display: block;font-size: 24px;color: #e41717;" alt="Thumbnail of medium-sized boats carrying passengers across a harbor." title="Watch video">
-                            </a> 
-                        </td>
-                      </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- End Video -->
-            <!-- Start Give -->
-            <tr>
-              <td>
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 0;line-height: 0;">
-                    <tr>
-                      <td style="text-align:center;">
-                        <a href="https://travelthatgives.org/cause/sustainable-farm-for-haitian-orphanage/" target="_blank" style="text-decoration: none;">
-                           <img src="https://i.postimg.cc/fyCmXgtZ/foundation-graphic.png" width="600" style="width: 100%;height: auto;border: 0;display: block;font-size: 16px;color: #e41717;" 
-                           alt="Text that states 'TRAVEL THAT GIVES. Give Back to the places you love! 
-                           Your donations will provide vital school supplies for orphans in Haiti.' 
-                           Image of Haitian school children. Link that states 'GIVE TODAY'" title="Travel that gives - GIVE TODAY!">
-                       </a> 
-                      </td>
-                    </tr>
-                  </table>
-              </td>
-            </tr>
-            <!-- End Give -->
-            <!-- Start Testimony -->
-            <tr>
-              <td>
-                 <table class="column-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 0;line-height: 0;">
-                    <tr>
-                       <td class="two-col" style="font-size: 0;">
-                            <!--[if mso]>
-                              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                              <tr>
-                              <td valign="top" style="padding: 0;width: 300px;">
-                           <![endif]-->
-                          <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0"  style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
-                             <tr>
-                                <td>
-                                   <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                      <tr>
-                                         <td>
-                                          <img class="mobile-img" src="https://i.postimg.cc/fyfjCRPG/evan-carlson.png"  width="300" style="width: 100%;max-width: 300px;height: auto;border: 0;display: block;font-size: 24px;color: #e41717;" alt="Evan Carlson and wife." title="Evan Carlson">
-                                         </td>
-                                      </tr>
-                                   </table>
-                                </td>
-                             </tr>
-                          </table>
-                          <!--[if mso]>
-                            </td><td valign="top" style="padding: 0;width: 300px;">
-                          <![endif]-->
-                          <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0"  style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
-                            <tr>
-                               <td>
-                                  <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                     <tr>
-                                        <td class="testimony-padding" style="text-align: left;padding: 0px 20px 20px 35px;">
-                                          <p class="p-text" style="margin-top: 20px;font-size: 16px;line-height: 20pt;color: #5d5752;font-weight: 400;font-family: 'Lato', sans-serif;">
-                                             "I cannot say thank you enough to the entire Inspiration Cruises & Tours team. Truly, it was amazing to witness their level of professionalism, and how they went WAY above the call of duty. We could not have pulled this off without you."
-                                           </p>
-                                           <p class="p-text" style="font-size: 16px;line-height: 20pt;color: #16749E;font-weight: 700;font-family: 'Lato', sans-serif;">
-                                             Evan Carlson<br>President &amp; CEO<br><span style="font-weight: 400;">Family Life Radio</span>
-                                           </p>
-                                           <div style="padding: 10px 0px 10px 0px;">
-                                               <!--[if mso]>
-                                               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.inspirationcruises.com/testimonies" style="height:46px;v-text-anchor:middle;width:240px;" arcsize="11%" strokecolor="#f3dc86" fillcolor="#f3dc86">
-                                                 <w:anchorlock/>
-                                                 <center style="color:#5d5752;font-family: 'Lato', sans-serif;font-size:20px;font-weight:bold;">MORE TESTIMONIES</center>
-                                               </v:roundrect>
-                                             <![endif]-->
-                                               <a class="bg-change-CEO" href="https://www.inspirationcruises.com/testimonies" target="_blank"
-                                               style="background-color:#f3dc86;border:2px solid #f3dc86;border-radius:5px;color:#5d5752;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:20px;font-weight:bold;line-height:46px;text-align:center;text-decoration:none;width:240px;-webkit-text-size-adjust:none;mso-hide:all;">
-                                                   MORE TESTIMONIES
-                                               </a>
-                                           </div>
-                                        </td>
-                                     </tr>
-                                  </table>
-                               </td>
-                            </tr>
-                         </table>
-                           <!--[if mso]>
-                             </td>
-                             </tr>
-                             </table>
-                          <![endif]-->
-                       </td>
-                    </tr>
-                 </table>
-              </td>
-            </tr>
-            <!-- End Testimony -->
-            <!-- Start Divider 2 -->
-            <tr>
-              <td>
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align:center;background-color: #16749e;padding: 20px;">
-                        <h3 class="divider-text" style="margin:0;font-size: 24px;line-height: 24pt;color: #ffffff;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;">
-                           INSPIRATION TRAVEL INSIGHTS
-                         </h3>
-                      </td>
-                    </tr>
-                  </table>
-              </td>
-            </tr>
-            <!-- End Divider 2 -->
-            <!-- Start Travel Row 1 -->
-            <tr>
-               <td>
-                  <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" dir="rtl" style="direction: rtl;">
-                     <tr>
-                        <td class="two-col" style="font-size: 0;">
-                             <!--[if mso]>
-                               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                               <tr>
-                               <td valign="top" style="padding: 0;width: 300px;">
-                            <![endif]-->
-                           <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0" dir="ltr" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;direction: ltr;">
-                              <tr>
-                                 <td>
-                                    <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                       <tr>
-                                          <td>
-                                             <img class="mobile-img" src="https://i.postimg.cc/d0Z2XBXm/journey-israel.png"  width="300" style="width: 100%;max-width: 300px;height: auto;border: 0;display: block;font-size: 24px;color: #e41717;" alt="Tourist riding a Camel in Jerusalem." title="Camel ride in Jerusalem">
-                                          </td>
-                                       </tr>
-                                    </table>
-                                 </td>
-                              </tr>
-                           </table>
-                           <!--[if mso]>
-                             </td><td valign="top" style="padding: 0;width: 300px;">
-                           <![endif]-->
-                           <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0" dir="ltr" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;direction: ltr;">
-                            <tr>
-                               <td>
-                                  <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                     <tr>
-                                        <td class="content" style="text-align: center;padding: 25px 20px 40px 25px;">
-                                          <h2 style="font-size: 20px;line-height: 20pt;color: #16749e;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;letter-spacing: .25px;">
-                                             JOURNEY THROUGH ISRAEL WITH A FIRST-TIME VISITOR
-                                         </h2>
-                                         <div style="padding-top: 10px;">
-                                             <!--[if mso]>
-                                             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.inspirationcruises.com/-/blog/2022/06/29/journey-through-israel-with-a-first-time-visitor/" style="height:46px;v-text-anchor:middle;width:164px;" arcsize="11%" strokecolor="#f3dc86" fillcolor="#f3dc86">
-                                               <w:anchorlock/>
-                                               <center style="color:#5d5752;font-family: 'Lato', sans-serif;font-size:20px;font-weight:bold;">READ MORE</center>
-                                             </v:roundrect>
-                                           <![endif]-->
-                                             <a class="bg-change-travel" href="https://www.inspirationcruises.com/-/blog/2022/06/29/journey-through-israel-with-a-first-time-visitor/" target="_blank"
-                                             style="background-color:#f3dc86;border:2px solid #f3dc86;border-radius:5px;color:#5d5752;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:20px;font-weight:bold;line-height:46px;text-align:center;text-decoration:none;width:164px;-webkit-text-size-adjust:none;mso-hide:all;">
-                                                 READ MORE
-                                             </a>
-                                         </div>
-                                        </td>
-                                     </tr>
-                                  </table>
-                               </td>
-                            </tr>
-                         </table>
-                            <!--[if mso]>
-                              </td>
-                              </tr>
-                              </table>
-                           <![endif]-->
-                        </td>
-                     </tr>
-                  </table>
-               </td>
-            </tr>
-            <!-- End Travel Row 1 -->
-            <!-- Start Travel Row 2 -->
-            <tr>
-               <td>
-                  <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 0;line-height: 0;">
-                     <tr>
-                        <td class="two-col" style="font-size: 0;">
-                             <!--[if mso]>
-                               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                               <tr>
-                               <td valign="top" style="padding: 0;width: 300px;">
-                            <![endif]-->
-                           <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
-                              <tr>
-                                 <td>
-                                    <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                       <tr>
-                                          <td>
-                                             <img class="mobile-img" src="https://i.postimg.cc/cC0fvNJX/rome.png"  width="300" style="width: 100%;max-width: 300px;height: auto;border: 0;display: block;font-size: 24px;color: #e41717;" alt="Inside the Roman Colosseum." title="Roman Colosseum">
-                                          </td>
-                                       </tr>
-                                    </table>
-                                 </td>
-                              </tr>
-                           </table>
-                           <!--[if mso]>
-                             </td><td valign="top" style="padding: 0;width: 300px;">
-                           <![endif]-->
-                           <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
-                            <tr>
-                               <td>
-                                  <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                     <tr>
-                                        <td class="travel-content" style="text-align: center;padding: 25px 20px 40px 25px;">
-                                          <h2 style="font-size: 20px;line-height: 20pt;color: #16749e;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;letter-spacing: .25px;">
-                                             ROME: EXPLORING THE EARLY CHURCH IN THE ETERNAL CITY
-                                           </h2>
-                                           <div style="padding-top: 10px;">
-                                               <!--[if mso]>
-                                               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.inspirationcruises.com/-/blog/2019/08/30/rome-exploring-the-early-church-in-the-eternal-city/" style="height:46px;v-text-anchor:middle;width:164px;" arcsize="11%" strokecolor="#f3dc86" fillcolor="#f3dc86">
-                                                 <w:anchorlock/>
-                                                 <center style="color:#5d5752;font-family: 'Lato', sans-serif;font-size:20px;font-weight:bold;">READ MORE</center>
-                                               </v:roundrect>
-                                             <![endif]-->
-                                               <a class="bg-change-travel" href="https://www.inspirationcruises.com/-/blog/2019/08/30/rome-exploring-the-early-church-in-the-eternal-city/" target="_blank"
-                                               style="background-color:#f3dc86;border:2px solid #f3dc86;border-radius:5px;color:#5d5752;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:20px;font-weight:bold;line-height:46px;text-align:center;text-decoration:none;width:164px;-webkit-text-size-adjust:none;mso-hide:all;">
-                                                   READ MORE
-                                               </a>
-                                           </div>
-                                        </td>
-                                     </tr>
-                                  </table>
-                               </td>
-                            </tr>
-                         </table>
-                            <!--[if mso]>
-                              </td>
-                              </tr>
-                              </table>
-                           <![endif]-->
-                        </td>
-                     </tr>
-                  </table>
-               </td>
-            </tr>
-            <!-- End Travel Row 2 -->
-            <!-- Start Divider 3 -->
-            <tr>
-               <td>
-                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 0;line-height: 0;">
-                     <tr>
-                       <td style="text-align:center;background-color: #16749e;padding: 20px;">
-                         <h3 class="divider-text" style="margin:0;font-size: 24px;line-height: 24pt;color: #ffffff;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;">
-                            UPCOMING TRAVEL EVENTS
-                          </h3>
-                       </td>
-                     </tr>
-                   </table>
-               </td>
-            </tr>
-            <!-- End Divider 3 -->
-            <!-- Start Travel Events -->
-            <tr>
-              <td>
-                 <table class="column-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                       <td class="three-col" style="font-size: 0;padding: 35px 20px;text-align: center;">
-                            <!--[if mso]>
-                              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                              <tr>
-                              <td valign="top" style="padding: 0;width: 194px;">
-                           <![endif]-->
-                          <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0"  align="left" style="width: 100%;max-width: 194px;display: inline-block;vertical-align: top;">
-                             <tr>
-                                <td class="events-block">
-                                   <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                      <tr>
-                                         <td class="events-padding" style="text-align: center;">
-                                          <a href="https://travel.inspirationcruises.com/cruise-to-the-caribbean-with-the-collingsworth-family" target="_blank" style="text-decoration: none;">
-                                             <img src="https://i.postimg.cc/25gw8JvK/headshotcaribbean.png" width="164" style="height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 164px;" alt="The Collingsworth Family" title="Collingsworth Family">
-                                         </a>
-                                         <h4 style="margin-bottom: 0;font-size: 14px;line-height: 17pt;color: #696969;font-weight: 700;font-family: 'Lato', sans-serif;">
-                                             The Collingsworth Family Presents the Inspiration Encounter Goes to Sea
-                                         </h4>
-                                         <p style="margin-top: 8px;font-size: 14px;line-height: 17pt;color: #696969;font-weight: 400;font-family: 'Lato', sans-serif;text-decoration: none;">
-                                             December 28, 2022 -<br> January 4, 2023
-                                         </p>
-                                         <div>
-                                             <!--[if mso]>
-                                             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://travel.inspirationcruises.com/cruise-to-the-caribbean-with-the-collingsworth-family" style="height:39px;v-text-anchor:middle;width:124px;" arcsize="11%" strokecolor="#16749e" fillcolor="#16749e">
-                                               <w:anchorlock/>
-                                               <center style="color:#ffffff;font-family: 'Lato', sans-serif;font-size:14px;font-weight:400;">READ MORE</center>
-                                             </v:roundrect>
-                                           <![endif]-->
-                                             <a class="bg-change-blue" href="https://travel.inspirationcruises.com/cruise-to-the-caribbean-with-the-collingsworth-family" target="_blank"
-                                             style="background-color:#16749e;border:2px solid #16749e;border-radius:5px;color:#ffffff;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:14px;font-weight:400;line-height:39px;text-align:center;text-decoration:none;width:124px;-webkit-text-size-adjust:none;mso-hide:all;">
-                                                 VIEW EVENT
-                                             </a>
-                                         </div>
-                                         </td>
-                                         <td>
-                                          <i class="events-hide" style="letter-spacing:20px;mso-font-width:-100%;display:inline-block;width:20px">&#8202;</i>
-                                         </td>
-                                      </tr>
-                                   </table>
-                                </td>
-                             </tr>
-                          </table>
-                          <!--[if mso]>
-                            </td><td valign="top" style="padding: 0;width: 174px;">
-                          <![endif]-->
-                          <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0"  align="center" style="width: 100%;max-width: 174px;display: inline-block;vertical-align: top;">
-                            <tr>
-                               <td class="events-block">
-                                  <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                     <tr>
-                                        <td class="events-padding" style="text-align: center;">
-                                          <a href="https://travel.inspirationcruises.com/tour-of-israel-with-lisa-harper-2023" target="_blank" style="text-decoration: none;">
-                                             <img src="https://i.postimg.cc/VNJgw1St/headshot.png" width="164" style="height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 164px;" alt="Lisa Harper" title="Lisa Harper">
-                                         </a>
-                                         <h4 style="margin-bottom: 0;font-size: 14px;line-height: 17pt;color: #696969;font-weight: 700;font-family: 'Lato', sans-serif;">
-                                             Tour of Israel<br>with<br>Lisa Harper
-                                         </h4>
-                                         <p style="margin-top: 8px;font-size: 14px;line-height: 17pt;color: #696969;font-weight: 400;font-family: 'Lato', sans-serif;text-decoration: none;">
-                                             March 21 - 31, 2023
-                                         </p>
-                                         <div>
-                                             <!--[if mso]>
-                                             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://travel.inspirationcruises.com/tour-of-israel-with-lisa-harper-2023" style="height:39px;v-text-anchor:middle;width:124px;" arcsize="11%" strokecolor="#16749e" fillcolor="#16749e">
-                                               <w:anchorlock/>
-                                               <center style="color:#ffffff;font-family: 'Lato', sans-serif;font-size:14px;font-weight:400;">READ MORE</center>
-                                             </v:roundrect>
-                                           <![endif]-->
-                                             <a class="bg-change-blue" href="https://travel.inspirationcruises.com/tour-of-israel-with-lisa-harper-2023" target="_blank"
-                                             style="background-color:#16749e;border:2px solid #16749e;border-radius:5px;color:#ffffff;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:14px;font-weight:400;line-height:39px;text-align:center;text-decoration:none;width:124px;-webkit-text-size-adjust:none;mso-hide:all;">
-                                                 VIEW EVENT
-                                             </a>
-                                         </div>
-                                        </td>
-                                     </tr>
-                                  </table>
-                               </td>
-                            </tr>
-                          </table>
-                          <!--[if mso]>
-                            </td><td valign="top" style="padding: 0;width: 174px;">
-                          <![endif]-->
-                          <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0" align="right" style="width: 100%;max-width: 174px;display: inline-block;vertical-align: top;">
-                            <tr>
-                               <td class="events-block">
-                                  <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                     <tr>
-                                        <td style="text-align: center;">
-                                          <a href="https://travel.inspirationcruises.com/inspirations-italy-tour" target="_blank" style="text-decoration: none;">
-                                             <img src="https://i.postimg.cc/NMTxy4kf/italy.png" width="164" style="height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;max-width: 164px;" alt="Outside of the Roman Colosseum." title="Roman Colosseum">
-                                         </a>
-                                         <h4 style="margin-bottom: 0;font-size: 14px;line-height: 17pt;color: #696969;font-weight: 700;font-family: 'Lato', sans-serif;">
-                                             Inspiration's<br>Italy Tour
-                                         </h4>
-                                         <p style="margin-top: 8px;font-size: 14px;line-height: 17pt;color: #696969;font-weight: 400;font-family: 'Lato', sans-serif;text-decoration: none;">
-                                             March 24 - April 1,<br>2023
-                                         </p>
-                                         <div>
-                                             <!--[if mso]>
-                                             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://travel.inspirationcruises.com/inspirations-italy-tour" style="height:39px;v-text-anchor:middle;width:124px;" arcsize="11%" strokecolor="#16749e" fillcolor="#16749e">
-                                               <w:anchorlock/>
-                                               <center style="color:#ffffff;font-family: 'Lato', sans-serif;font-size:14px;font-weight:400;">READ MORE</center>
-                                             </v:roundrect>
-                                           <![endif]-->
-                                             <a class="bg-change-blue" href="https://travel.inspirationcruises.com/inspirations-italy-tour" target="_blank"
-                                             style="background-color:#16749e;border:2px solid #16749e;border-radius:5px;color:#ffffff;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:14px;font-weight:400;line-height:39px;text-align:center;text-decoration:none;width:124px;-webkit-text-size-adjust:none;mso-hide:all;">
-                                                 VIEW EVENT
-                                             </a>
-                                         </div>
-                                        </td>
-                                     </tr>
-                                  </table>
-                               </td>
-                            </tr>
-                          </table>
-                           <!--[if mso]>
-                             </td>
-                             </tr>
-                             </table>
-                          <![endif]-->
-                       </td>
-                    </tr>
-                 </table>
-              </td>
-            </tr>
-            <!-- End Travel Events -->
-            <!-- Start Social Media -->
-            <tr>
-               <td style="text-align:center;background-color: #16749e;padding: 20px;">
-                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                     <tr>
-                       <td style="text-align:center;padding-bottom: 5px;">
-                         <h3 class="divider-text" style="margin:0;font-size: 24px;line-height: 24pt;color: #ffffff;font-weight: 700;font-family: 'Lato', sans-serif;text-transform: capitalize;text-decoration: none;">
-                            FOLLOW US ON SOCIAL MEDIA
-                        </h3>
-                       </td>
-                     </tr>
-                     <tr>
-                       <td style="text-align: center;">
-                         <a href="https://www.facebook.com/inspirationcruises" target="_blank" style="text-decoration: none;">
-                             <img src="https://i.postimg.cc/y8Ynf0sv/facebook-logo-white.png" width="24" style="border: 0;height: auto;font-size: 24px;color: #bdb4b4;" alt="Facebook icon">
-                         </a>
-                         <i style="letter-spacing:15px;mso-font-width:-100%;display:inline-block;width:15px">&#8202;</i>
-                         <a href="https://twitter.com/inspiration" target="_blank" style="text-decoration: none;">
-                           <img src="https://i.postimg.cc/FHBbDqPH/twitter-logo-white.png" width="24" style="border: 0;height: auto;font-size: 24px;color: #bdb4b4;" alt="Twitter icon">
-                         </a>
-                         <i style="letter-spacing:15px;mso-font-width:-100%;display:inline-block;width:15px">&#8202;</i>
-                         <a href="https://www.instagram.com/inspirationcruises/" target="_blank" style="text-decoration: none;">
-                           <img src="https://i.postimg.cc/MTk78BJk/instagram-logo-white.png
-                           " width="24" style="border: 0;height: auto;font-size: 24px;color: #bdb4b4;" alt="Instagram icon">
-                         </a>
-                         <i style="letter-spacing:15px;mso-font-width:-100%;display:inline-block;width:15px">&#8202;</i>
-                         <a href="https://www.youtube.com/InspirationCruises" target="_blank" style="text-decoration: none;">
-                           <img src="https://i.postimg.cc/NfG1YYS0/youtube-logo-white.png" width="24" style="border: 0;height: auto;font-size: 24px;color: #bdb4b4;" alt="YouTube icon">
+<body>
+    <!-------------------- NAVIGATION -------------------->
+    <header class="header sticky">
+        <a href="#">
+            <h3 class="logo">KG</h3>
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link" href="#about">About</a></li>
+                <li><a class="main-nav-link" href="#portfolio">Portfolio</a></li>
+                <li>
+                    <a class="main-nav-link nav-cta" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-------------- MOBILE NAVIGATION -------------->
+        <!-- Build when inserting media queries -->
+        <!-------------- MOBILE NAVIGATION -------------->
+    </header>
+    <!-------------------- NAVIGATION -------------------->
+    <main>
+        <!-------------------- HERO -------------------->
+        <section class="section-hero bg-image">
+            <div class="hero-container">
+                <div class="hero-text-box">
+                        <p class="hero-secondary">Email Developer</p>
+                        <h1 class="hero-primary">Kenneth Graham</h1>
+                </div>
+            </div>
+        </section>
+        <!-------------------- HERO -------------------->
+
+        <!-------------------- ABOUT -------------------->
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 class="heading-secondary">ABOUT ME</h2>
+                <div class="about-column-container">
+                    <!-- Column-1 -->
+                    <div class="about-columns">
+                        <h2 class="heading-tertiary">Who am I?</h2>
+                        <div class="about-text-container">
+                            <p class="about-text">
+                                I am a meticulous Email Developer who embraces the unique challenges of email development. Each email is tested using Litmus for dark mode optimization, responsiveness, and accessibility in over 80 email clients. The emails I build are ready to use in Salesforce Marketing Cloud, Pardot, MailChimp, Marketo, Klaviyo, etc. I can take any Figma or PSD file and turn it into a functional and visually appealing HTML email
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Column-2 -->
+                    <div class="about-columns">
+                        <h2 class="heading-tertiary">My Skills</h2>
+                        <div class="skills-container">
+                            <div class="skills-content">HTML</div>
+                            <div class="skills-content">CSS</div>
+                            <div class="skills-content">Photoshop</div>
+                            <div class="skills-content">Figma</div>
+                            <div class="skills-content">Sketch</div>
+                            <div class="skills-content">Litmus</div>
+                            <div class="skills-content">Email On Acid</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------------- ABOUT -------------------->
+
+        <!-------------------- PORTFOLIO -------------------->
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <h2 class="portfolio-heading">PORTFOLIO</h2>
+                <div class="portfolio-column-container">
+                    <div class="portfolio-column">
+                        <a href="">
+                            <!-- The intrinsic size of the images must be the same size in order to keep each column the same -->
+                            <img class="portfolio-img" src="https://i.postimg.cc/Yq5jp8TB/work-1.jpg" alt="">
                         </a>
-                       </td>
-                     </tr>
-                   </table>
-               </td>
-            </tr>
-            <!-- End Social Media -->
-            <!-- Start GIF -->
-            <tr>
-              <td>
-                 <table class="column-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                       <td class="GIF-section" style="font-size: 0;padding: 15px 20px 30px 20px;">
-                            <!--[if mso]>
-                              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                              <tr>
-                              <td valign="top" style="padding: 0;width: 270px;">
-                           <![endif]-->
-                          <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 270px;display: inline-block;vertical-align: top;">
-                             <tr>
-                                <td style="width: 270px;">
-                                   <table class="content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                      <tr>
-                                         <td class="GIF-padding" style="text-align: center;padding:25px 32px 0px 0px;">
-                                          <img class="mobile-img" src="https://i.postimg.cc/zGg3YczB/GIF.gif"  width="170" style="width: 100%;max-width: 170px;height: auto;border: 0;vertical-align: middle;font-size: 24px;color: #e41717;" alt="GIF of the company's Instagram page." title="Instagram">
-                                         </td>
-                                      </tr>
-                                   </table>
-                                </td>
-                             </tr>
-                          </table>
-                          <!--[if mso]>
-                            </td><td valign="top" style="padding: 0;width: 270px;">
-                          <![endif]-->
-                          <table class="mobile-block" role="presentation" cellspacing="0" cellpadding="0" border="0"  style="width: 100%;max-width: 270px;display: inline-block;vertical-align: top;">
-                            <tr>
-                               <td>
-                                  <table class="mobile-content" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                     <tr>
-                                        <td class="GIF-content"style="text-align: left;padding-top: 10px;padding-right: 20px;width: 270px;">
-                                          <h2 class="GIF-header" style="margin-bottom: 25px;font-size: 20px;line-height: 1.3;color: #16749e;font-weight: 700;font-family: 'Lato', sans-serif;">
-                                             Connect with other Inspiration travelers and stay up-to-date on upcoming cruises & tours!
-                                         </h2>
-                                         <p style="font-size: 15px;line-height: 20pt;color: #696969;font-weight: 400;font-family: 'Lato', sans-serif;">
-                                             Love God? Love travel? Join our private Facebook group to cultivate friendships and share your exceptional travel experiences.
-                                         </p>
-                                         <div>
-                                             <!--[if mso]>
-                                             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.facebook.com/groups/welovechristiantravel" style="height:48px;v-text-anchor:middle;width:260px;" arcsize="11%" strokecolor="#f3dc86" fillcolor="#f3dc86">
-                                               <w:anchorlock/>
-                                               <center style="color:#5d5752;font-family: 'Lato', sans-serif;font-size:20px;font-weight:400;">MORE TESTIMONIES</center>
-                                             </v:roundrect>
-                                           <![endif]-->
-                                             <a class="bg-change-face" href="https://www.facebook.com/groups/welovechristiantravel" target="_blank"
-                                             style="background-color:#f3dc86;border:2px solid #f3dc86;border-radius:5px;color:#5d5752;display:inline-block;font-family: 'Lato', sans-serif;text-transform: capitalize;font-size:20px;font-weight:400;line-height:48px;text-align:center;text-decoration:none;width:260px;-webkit-text-size-adjust:none;mso-hide:all;">
-                                                 JOIN FACEBOOK GROUP
-                                             </a>
-                                         </div>
-                                        </td>
-                                     </tr>
-                                  </table>
-                               </td>
-                            </tr>
-                         </table>
-                           <!--[if mso]>
-                             </td>
-                             </tr>
-                             </table>
-                          <![endif]-->
-                       </td>
-                    </tr>
-                 </table>
-              </td>
-            </tr>
-            <!-- End GIF -->
-            <!-- Start Footer -->
-            <tr>
-               <td style="text-align:center;background-color: #16749e;padding: 20px;">
-                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                     <tr>
-                       <td style="text-align: center;">
-                         <a href="https://www.inspirationcruises.com/" target="_blank" style="text-decoration: none;">
-                            <img class="footer-img" src="https://i.postimg.cc/bY9QKd6M/logo-white.png" width="140"  height="57" style="width: 140px;height: 57px;border: 0;vertical-align: middle;font-size: 24px;color: #bdb4b4;" alt="Inspiration cruises and tours logo." title="Inspirations Cruises & Tours">
-                          </a>
-                       </td>
-                     </tr>
-                     <tr>
-                      <td style="text-align: center;">
-                       <p class="footer-text" style="margin-top: 11px;font-size: 11px;line-height: 12pt;color: #ffffff;font-weight: 400;font-family: 'Lato', sans-serif;">
-                         <a href="#" target="_blank" style="color: #ffffff;text-decoration: underline;">Preferences</a>
-                         &nbsp;&nbsp;|&nbsp;&nbsp;
-                         <a href="#" target="_blank" style="color: #ffffff;text-decoration: underline;">Unsubscribe</a>
-                       </p>
-                      </td>
-                     </tr>
-                   </table>
-               </td>
-           </tr>
-            <!-- End Footer -->
-         </table>
-         <!--[if mso]>
-         </td>
-         </tr>
-         </table>
-         <![endif]-->
-          <!-- End ghost table for proper rendering in MSO 2007 - 2010 -->
-      </div>
-      <!--[if mso >
-            </td>
-        </tr>
-      </table>
-      <![endif]-->
-   </center>
+                        <a class="portfolio-img-text-container" href="#">
+                            <button class="portfolio-btn">
+                                View Code
+                            </button>
+                        </a>
+                    </div>
+                    <div class="portfolio-column">
+                        <a href="">
+                            <img class="portfolio-img" src="https://i.postimg.cc/Yq5jp8TB/work-1.jpg" alt="">
+                        </a>
+                        <a class="portfolio-img-text-container" href="#">
+                            <button class="portfolio-btn">
+                                View Code
+                            </button>
+                        </a>
+                    </div>
+                    <div class="portfolio-column">
+                        <a href="">
+                            <img class="portfolio-img" src="https://i.postimg.cc/Yq5jp8TB/work-1.jpg" alt="">
+                        </a>
+                        <a class="portfolio-img-text-container" href="#">
+                            <button class="portfolio-btn">
+                                View Code
+                            </button>
+                        </a>
+                    </div>
+                    <div class="portfolio-column">
+                        <a href="">
+                            <img class="portfolio-img" src="https://i.postimg.cc/Yq5jp8TB/work-1.jpg" alt="">
+                        </a>
+                        <a class="portfolio-img-text-container" href="#">
+                            <button class="portfolio-btn">
+                                View Code
+                            </button>
+                        </a>
+                    </div>
+                    <div class="portfolio-column">
+                        <a href="">
+                            <img class="portfolio-img" src="https://i.postimg.cc/Yq5jp8TB/work-1.jpg" alt="">
+                        </a>
+                        <a class="portfolio-img-text-container" href="#">
+                            <button class="portfolio-btn">
+                                View Code
+                            </button>
+                        </a>
+                    </div>
+                    <div class="portfolio-column">
+                        <a href="">
+                            <img class="portfolio-img" src="https://i.postimg.cc/Yq5jp8TB/work-1.jpg" alt="">
+                        </a>
+                        <a class="portfolio-img-text-container" href="#">
+                            <button class="portfolio-btn">
+                                View Code
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------------- PORTFOLIO -------------------->
+
+        <!-------------------- CONTACT -------------------->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="heading-secondary">CONTACT</h2>
+                <div class="form-container">
+                    <form class="contact-form">
+                        <div class="input-container">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Enter Your Name" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="Enter Your Email" required> 
+                        </div>
+                        <div class="input-container">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea name="message" id="message" class="form-input" cols="30" rows="10" placeholder="Enter Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="contact-btn">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-------------------- CONTACT -------------------->
+    </main>
+    <!-------------------- FOOTER -------------------->
+    <footer class="footer-section">
+        <div class="container footer">
+            <div class="footer-upper">
+                <div class="social-container">
+                    <a href="https://www.linkedin.com/in/kenneth-graham-b4a29a62/" class="" rel="noreferrer" target="_blank">
+                        <img src="https://i.postimg.cc/tCWYympC/icons8-linkedin-150.png" alt="LinkedIn icon" title="LinkedIn" class="social-img">
+                    </a>
+                    <a href="https://github.com/KennethGrahamdev" class="" rel="noreferrer" target="_blank">
+                        <img src="https://i.postimg.cc/nV6Cyt8P/icons8-github-128.png" alt="GitHub icon" title="GitHub" class="social-img">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <p class="footer-text">Copyright ©
+                    <span class="year">2023</span>.
+                    Made by Kenneth Graham
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-------------------- FOOTER -------------------->
 </body>
+
 </html>
